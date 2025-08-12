@@ -1,0 +1,110 @@
+/* src/components/HeaderBackground.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  padding: 0;
+}
+
+.background-container {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+  
+  width: 100%;
+  position: relative;
+  min-height: 100vh; /* Ensures full screen height */
+  display: flex;
+  flex-direction: column;
+  
+}
+ 
+/* Optional: Add a semi-transparent overlay to darken background */
+.background-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4); /* light blur effect */
+  z-index: 0;
+  
+}
+
+.header {
+  background-color: rgba(0, 0, 0, 0.7); /* semi-transparent */
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  height: 50px;
+  flex-shrink: 0;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links input {
+  padding: 0.3rem;
+}
+
+.nav-links button {
+  padding: 0.4rem 0.8rem;
+  background-color: #ff9800;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.background-content {
+  position: relative;
+  z-index: 1;
+  flex: 1; 
+  color: white;
+  text-align: center;
+  padding: 4rem 2rem;
+  margin-top: 30px;
+  font-style: italic;
+
+}
+
+.button-group {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.button-group button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+
+  border: none;
+  background-color: #c5a261;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  width: 200px;
+}

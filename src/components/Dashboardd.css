@@ -1,0 +1,57 @@
+.dashboard-container {
+  height: 100vh;
+  background-image: url('../assests/imagecopy.png'); /* or your image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+
+/* New container for the buttons */
+.button-container {
+  background-color: rgba(255, 255, 255, 0.2); /* Light white box */
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* ✅ this centers the buttons vertically */
+  align-items: center;
+  gap: 1rem;
+  min-width: 300px;
+  width: 70%;
+  max-width: 300px;
+  height: 400px;
+}
+
+
+.dashboard-container h1 {
+  font-size: 2rem;
+  color: black;
+}
+
+.dashboard-container button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  border: 1px solid #999;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  cursor: pointer;
+   background-color: #c5a261;
+
+  /* ❌ REMOVE this */
+  /* margin-top: 70px; */
+
+  /* ✅ Optional: add small spacing if needed */
+  margin: 0.2rem 0;
+}
+
+
+
+
+
